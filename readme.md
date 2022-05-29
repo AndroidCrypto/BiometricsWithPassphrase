@@ -57,10 +57,13 @@ There are two more buttons on the Settings screen:
 
 - reset password: the stored password is deleted and the "use Biometrics login" is set to "not set" if checked before.
 
+**App facts:** The app was generated on Android Studio Chipmunk 2021.2.1 with Build #AI-212.5712.43.2112.8512546, 
+built on April 28, 2022. Runtime version: 11.0.12+0-b1504.28-7817840 aarch64, VM: OpenJDK 64-Bit Server.
+The app is compiled on Android SDK 32 ("12") and is runnable on Android SDK 23+.
+
 ![Image 1](images/biometrics_00001.png?raw=true "Image 1") 
 ![Image 2](images/biometrics_00002.png?raw=true "Image 2") 
 ![Image 3](images/biometrics_00003.png?raw=true "Image 3") 
 ![Image 4](images/biometrics_00004.png?raw=true "Image 4") 
 ![Image 5](images/biometrics_00005.png?raw=true "Image 5") 
 ![Image 6](images/biometrics_00006.png?raw=true "Image 6") 
-![Image 7](images/biometrics_00007.png?raw=true "Image 7") 
