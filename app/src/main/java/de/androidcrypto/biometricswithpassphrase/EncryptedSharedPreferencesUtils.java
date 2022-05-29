@@ -49,6 +49,25 @@ public class EncryptedSharedPreferencesUtils {
         saveEncryptedSharedPreferences(SETTINGS_APP_PASSWORD, password);
     }
 
+    public static int changeAppPassword(String oldPassword, String newPassword) {
+        // return status
+        // 0 = unknown error
+        // 1 = app password changed
+        // 2 = old password is not correct
+        // first checks that the old password is correct
+        boolean isOldPasswordVerified = verifyAppPassword(oldPassword);
+        if (!isOldPasswordVerified) {
+            return 2;
+        }
+        // now the oldPassword is verified, lets set the new password
+        setAppPassword(newPassword);
+        return 1;
+    }
+
+    public static void deleteAppPassword() {
+        saveEncryptedSharedPreferences(SETTINGS_APP_PASSWORD, encryptedSharedPreferencesDefaultValue);
+    }
+
     public static boolean verifyAppPassword(String password) {
         boolean result = false;
         String appPassword = getEncryptedSharedPreferences(SETTINGS_APP_PASSWORD);

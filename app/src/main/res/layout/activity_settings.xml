@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/SettingsScrollView"
     tools:context=".SettingsActivity">
 
     <LinearLayout
@@ -67,83 +68,5 @@
             android:textOff="OFF"
             android:textOn="ON"
             android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/tvInformation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="Enter a plaintext and passphrase for encryption or passphrase and ciphertext for decryption. The ciphertext is Base64 encoded."
-            android:textAlignment="center"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <EditText
-            android:id="@+id/etPlaintext"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:ems="10"
-            android:inputType="textMultiLine|text"
-            android:minHeight="48dp"
-            android:text="This is the secret plaintext for encryption" />
-
-        <EditText
-            android:id="@+id/etPassphrase"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
-            android:ems="10"
-            android:inputType="textMultiLine|text"
-            android:minHeight="48dp"
-            android:text="my secret passphrase" />
-
-        <Button
-            android:id="@+id/btnEncrypt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
-            android:text="encrypt" />
-
-        <EditText
-            android:id="@+id/etCiphertext"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
-            android:ems="10"
-            android:hint="The ciphertext comes here or enter one for decryption"
-            android:inputType="textMultiLine|text"
-            android:minHeight="48dp" />
-
-        <Button
-            android:id="@+id/btnDecrypt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
-            android:text="decrypt" />
-
-        <EditText
-            android:id="@+id/etDecryptedtext"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="32dp"
-            android:ems="10"
-            android:hint="The decryptedtext comes here"
-            android:inputType="textMultiLine|text"
-            android:minHeight="48dp" />
-
     </LinearLayout>
 </ScrollView>
