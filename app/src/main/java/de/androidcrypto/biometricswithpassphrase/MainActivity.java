@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
 
             promptInfo = new BiometricPrompt.PromptInfo.Builder()
                     .setTitle("Biometric login for my app")
-                    .setSubtitle("Log in using your biometric credentials")
+                    .setSubtitle("Log in using your fingerprint")
                     .setNegativeButtonText("Use app password")
                     .build();
 
@@ -180,7 +180,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void verifyPassword(View v) {
         android.app.AlertDialog.Builder alertDialog = new android.app.AlertDialog.Builder(v.getContext());
-        alertDialog.setTitle("Enter App password");
+        alertDialog.setTitle("Enter the app password");
         String message = "\nPlease enter the\napp password and press\nOPEN, to use all\nfunctions.";
         alertDialog.setMessage(message);
         final EditText oldPassphrase = new EditText(v.getContext());
