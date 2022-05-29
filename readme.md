@@ -56,3 +56,5 @@ There are two more buttons on the Settings screen:
   password length check is successful the new password is saved.
 
 - reset password: the stored password is deleted and the "use Biometrics login" is set to "not set" if checked before.
+
+![Image 1](images/biometrics_00001.png?raw=true "Image 1")
